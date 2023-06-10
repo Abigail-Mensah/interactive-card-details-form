@@ -48,4 +48,111 @@ transform: rotate(45deg);
     filter: blur(40.957px);
     transform: rotate(45deg);
 }
+.rectangle {
+    position: absolute;
+    width: 447px;
+    height: 245px;
+    left: 164px;
+    top: 225px;
+    background-color: #6348FE;
+    border-radius: 10px;
+
+}
+.overlays1 {
+    position: absolute;
+    width: 100px;
+    height:200px;
+    left: 300px;
+    top: -60px;
+    background: #FF834A;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(40px);
+    transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+}
+.overlays2 {
+    position:absolute;
+    width: 100px;
+    height: 250px;
+    top: -80px;
+    left: 170px;
+    background: #D53AFF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(40px);
+    transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+}
+
+.overlays3 {
+    position: absolute;
+    width: 100px;
+    height: 180px;
+    top: 10px;
+    left: 230px;
+    background: #47A2FF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(40px);
+    transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+}   
+
+.circle {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: white;
+    top:23px;
+    left: 20px;
+}
+.smallcircle{
+    position: absolute;
+    width: 21.13px;
+    height: 21.13px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: transparent;
+    left: 85px;
+    top: 35px;
+}
+.circles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+}
+.cvcrectangle {
+    position: absolute;
+    width: 447px;
+    height: 227.33px;
+    left: 258px;
+    top: 486.67px;
+    
+    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+.cvcbar {
+    position: absolute;
+    width: 447px;
+    height: 50.11px;
+    left: -1px;
+    top: 20.01px;
+    
+    background-color: #2F2F2F;
+}
+.cvcinner {
+    position: absolute;
+    width: 361px;
+    height: 35.26px;
+    width: 361px;
+    height: 35.26px;
+    left: 43px;
+    top: 100.23px;
+    background: #ADB5BE;
+    border-radius: 4px;
+
+}
+
 
