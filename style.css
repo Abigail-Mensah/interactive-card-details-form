@@ -1,0 +1,51 @@
+body{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background-color: white;
+}
+.leftcontainer{
+width: 483px;
+height: 900px;
+background:  #21092F;
+}
+.overlay{
+    position: absolute;
+width: 148px;
+height: 557px;
+left: 10.53px;
+top: 100px;
+
+background: #D53AFF;
+mix-blend-mode: normal;
+opacity: 0.85;
+filter: blur(67.957px);
+transform: rotate(45deg);
+}
+.overlay2{
+    position: absolute;
+width: 100px;
+height: 357px;
+left: 158.53px;
+top: 68px;
+
+background: #FF834A;
+mix-blend-mode: normal;
+opacity: 0.85;
+filter: blur(67.957px);
+transform: rotate(45deg);
+}
+.overlay3{
+    position: absolute;
+    width:100px;
+    height: 557px;
+    left: 130.57px;
+    top: 200.53px;
+    
+    background: #47A2FF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(40.957px);
+    transform: rotate(45deg);
+}
+
