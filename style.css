@@ -61,14 +61,14 @@ transform: rotate(45deg);
 }
 .overlays1 {
     position: absolute;
-    width: 100px;
+    width: 50px;
     height:200px;
     left: 300px;
     top: -60px;
     background: #FF834A;
     mix-blend-mode: normal;
     opacity: 0.85;
-    filter: blur(40px);
+    filter: blur(50px);
     transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
 }
 .overlays2 {
@@ -197,17 +197,19 @@ p {
     justify-content: space-between;
     width: 300px;
     height: 100px;
-   align-items: center;
+    align-items: center;
     top: 600px;
-    left: 985px;
+    left: 796px;
  
  }
 .inputmonth {
     position: absolute;
+    display: flex;
     width: 80px;
     height: 45px;
     border-radius: 5px;
     align-items: center;
+    cursor: pointer;
 }
 .monthtext {
     position: absolute;
@@ -215,16 +217,19 @@ p {
     width: 50px;
     height: 20px;
     top: -20px;
-   align-items: center;
+    font-size: 10px;
+    
 
 }
+
 .inputyear {
     position: absolute;
     width: 80px;
     height: 45px;
     border-radius: 5px;
     align-items: center;
-    left: 110px;
+    left: 100px;
+    cursor: pointer;
 }
 .yeartext {
     position: absolute;
@@ -236,11 +241,73 @@ p {
 }
 .inputcvc {
     position: absolute;
-    width: 100px;
-    height: 20px;
-    top: 40px;
-    left: 200px;
+    width: 191px;
+    height: 45px;
+    top: 25px;
+    left: 205px;
+    border-radius: 5px;
+    cursor: pointer;
 
+}
+.cvctext {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    top: -20px;
+    left: 210px;
+    z-index: 1;
+}
+.name_numberbox {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    top: 400px;
+    left: 800px;
+    /* background-color: #6348FE; */
+}
+.inputname {
+    width: 318px;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nametext {
+    position: absolute;
+    width: 240px;
+    height: 20px;
+    top: -20px;
+    font-size: 10px;
+}
+
+.inputnumber {
+    position: absolute;
+    width: 318px;
+    height: 45px;
+    top: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.numbertext {
+    position: absolute;
+    width: 240px;
+    height: 20px;
+    top: 70px;
+    font-size: 10px;
+}
+
+button {
+    position: absolute;
+    width: 381px;
+    height: 53px;
+    border-radius: 5px;
+    left: 800px;
+    top: 800px;
+    background-color: #21092F;
+    color: #FFFFFF;
 }
 
 

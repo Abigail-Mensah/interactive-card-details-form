@@ -8,21 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <form id = "cardForm">
-        <label for="nameInput">CARD HOLDER NAME</label>
-        <input type="text" id="nameInput" placeholder="eg. name">
-        <label for="numberInput"> CARD NUMBER</label>
-        <input type="number" id="numberInput" placeholder="eg.123456789123000">
+    <form id = "cardForm">  
+       <div class ="name_numberbox">
+        <label for="nameInput" class="nametext">CARDHOLDER NAME</label>
+        <input type="text" id="nameInput" class="inputname" placeholder="eg. name">
+        <label for="numberInput" class="numbertext"> CARD NUMBER </label>
+        <input type="number" id="numberInput"  class="inputnumber" placeholder="eg.123456789123000">
+       </div>
+    
      
 
 
-        <div class="dates">
-            <label for="cvcInput">CVC</label>
+        <div class="dates"> 
+            <label for="cvcInput"  class = "cvctext">CVC</label>
             <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123">
-            <input type="text" id="monthInput" class="inputmonth" placeholder="MM">
-            <label for="monthInput" class = "monthtext">EXP.DATE(MM)</label>
+            <input type="text" id="monthInput" class="inputmonth" class = "centered-input" placeholder="MM">
+            <label for="monthInput" class = "monthtext">EXP.DATE(MM/YY)</label>
             <input type="text" id="yearInput" class="inputyear" placeholder="YY">
-            <label for="yearInput" class = "yeartext">(YY)</label>
+            <label for="yearInput" class = "yeartext"></label>
           </div>
 
         <div class="leftcontainer">
@@ -56,12 +59,12 @@
         <div class="cvcrectangle" >
             <div class="cvcbar"></div>
             <div class="cvcinner"  >
-                <span id="cvcRectangle" >123</span>
+                <span id="cvcRectangle" >000</span>
             </div>
 
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Confirm</button>
 
     </form>
   

@@ -55,3 +55,7 @@ function submitForm(event) {
   // Reset the form after submission (optional)
   document.getElementById("cardForm").reset();
 }
+// window.addEventListener('DOMContentLoaded', function() {
+//   var inputField = document.querySelector('.centered-input');
+//   inputField.style.placeholder = 'MM';
+// });
