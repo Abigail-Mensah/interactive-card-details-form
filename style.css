@@ -10,6 +10,7 @@ height: 900px;
 background:  #21092F;
 }
 .overlay{
+
     position: absolute;
 width: 148px;
 height: 557px;
@@ -146,7 +147,6 @@ transform: rotate(45deg);
     position: absolute;
     width: 361px;
     height: 35.26px;
-    width: 361px;
     height: 35.26px;
     left: 43px;
     top: 100.23px;
@@ -154,5 +154,95 @@ transform: rotate(45deg);
     border-radius: 4px;
 
 }
+h2 {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 100px;
+    left: 230px;
+    color: white;
+}
+
+
+p {
+    position: absolute;
+    width:50px;
+    height: 100px;
+    top: 140px;
+    left: 30px;
+    color: white;
+    
+}
+ ul {
+    position: absolute;
+    width:50px;
+    height: 100px;
+    top: 140px;
+    left: 300px;
+    color: white;
+ }
+
+ span {
+    position: absolute;
+    width:50px;
+    height: 100px;
+    top: 10px;
+    left: 300px;
+    color: white ;
+ }
+ .dates {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: 100px;
+   align-items: center;
+    top: 600px;
+    left: 985px;
+ 
+ }
+.inputmonth {
+    position: absolute;
+    width: 80px;
+    height: 45px;
+    border-radius: 5px;
+    align-items: center;
+}
+.monthtext {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 20px;
+    top: -20px;
+   align-items: center;
+
+}
+.inputyear {
+    position: absolute;
+    width: 80px;
+    height: 45px;
+    border-radius: 5px;
+    align-items: center;
+    left: 110px;
+}
+.yeartext {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 20px;
+    top: -20px;
+    left: 150px;
+}
+.inputcvc {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 40px;
+    left: 200px;
+
+}
+
+
 
 

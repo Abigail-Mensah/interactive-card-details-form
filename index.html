@@ -8,28 +8,63 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="leftcontainer">
-        <div class="overlay"></div>
-        <di class="overlay2"></di>
-        <di class="overlay3"></di>
+    <form id = "cardForm">
+        <label for="nameInput">CARD HOLDER NAME</label>
+        <input type="text" id="nameInput" placeholder="eg. name">
+        <label for="numberInput"> CARD NUMBER</label>
+        <input type="number" id="numberInput" placeholder="eg.123456789123000">
+     
 
-    </div>
-      
-    <div class="rectangle" id="inforectangle">
-        <div class="circles">
-            <div class="circle"></div>
-            <div class="smallcircle"></div>
-            <div class="overlays1"></div>
-            <div class="overlays2"></div>
-            <div class="overlays3"></div>
+
+        <div class="dates">
+            <label for="cvcInput">CVC</label>
+            <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123">
+            <input type="text" id="monthInput" class="inputmonth" placeholder="MM">
+            <label for="monthInput" class = "monthtext">EXP.DATE(MM)</label>
+            <input type="text" id="yearInput" class="inputyear" placeholder="YY">
+            <label for="yearInput" class = "yeartext">(YY)</label>
+          </div>
+
+        <div class="leftcontainer">
+            <div class="overlay"></div>
+            <di class="overlay2"></di>
+            <di class="overlay3"></di>
+    
         </div>
-      
-    </div>
-    <div class="cvcrectangle" id="cvcinfo">
-        <div class="cvcbar"></div>
-        <div class="cvcinner"></div>
+          
+        <div class="rectangle"id= "infoRectangle" >
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="smallcircle"></div>
+                <div class="overlays1"></div>
+                <div class="overlays2"></div>
+                <div class="overlays3"></div>
+                <div  class="number">
+                    <h2  id="numberText">0000 0000 0000 0000</h2>
+                </div>
+                <div class="name-month-year">
+                <div class="name">
+                    <p id="nameText" ></p>
+                </div>
+                <div  class="month-year">
+                    <ul   id="monthYearText">0/0</ul>
+                </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="cvcrectangle" >
+            <div class="cvcbar"></div>
+            <div class="cvcinner"  >
+                <span id="cvcRectangle" >123</span>
+            </div>
 
-    </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+  
     <script src="main.js"></script>
 </body>
 </html>
