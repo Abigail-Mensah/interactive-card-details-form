@@ -255,6 +255,7 @@ p {
     height: 10px;
     top: -20px;
     left: 210px;
+    font-size: 16px;
     z-index: 1;
 }
 .name_numberbox {
@@ -310,6 +311,61 @@ button {
     color: #FFFFFF;
 }
 
+.error-border {
+    border: 1px solid red;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    display: block;
+  }
 
+
+  .popup {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background-color: #D53AFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+  }
+  
+  .circle1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: none; /* Added to hide the circle initially */
+  }
+  
+  .popup-text {
+    font-size: 24px;
+    font-weight: bold;
+    color:blue;
+  }
+  
+  .continue-button {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
 
 
