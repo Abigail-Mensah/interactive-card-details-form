@@ -111,41 +111,52 @@ function submitForm(event) {
     console.log("Expiration: " + month + "/" + year);
     console.log("CVC: " + cvc);
 
+
+
+    nameInput.style.display = "none";
+    numberInput.style.display = "none";
+    monthInput.style.display = "none";
+    yearInput.style.display = "none";
+    cvcInput.style.display = "none";
+    document.getElementById("submit").style.display="none";
+
+
+      // Hide the labels
+  document.querySelector(".nametext").style.display = "none";
+  document.querySelector(".numbertext").style.display = "none";
+  document.querySelector(".cvctext").style.display = "none";
+  document.querySelector(".monthtext").style.display = "none"
+    popup.style.display = "block";
+
     // Reset the form after submission (optional)
     document.getElementById("cardForm").reset();
   }
 
-  var popup = document.getElementById("popup");
-  var circle = document.querySelector(".circle1");
-  popup.style.display = "none";
-  circle.style.display = "none";
-
-
-   if (isValid) {
-    // Perform form submission
-    console.log("Name: " + name);
-    console.log("Card Number: " + cardNumber);
-    console.log("Expiration: " + month + "/" + year);
-    console.log("CVC: " + cvc);
 
     // Show the popup message
-    popup.style.display = "block";
   
-    // Show the circle
-    circle.style.display = "block";
-  
-    // Reset the form after submission (optional)
-    document.getElementById("cardForm").reset();
-  }
 
+    // Show the circle
+    circle1.style.display = "block";
+
+      // Show the continue button with text
+      continueButton.style.display = "block";
+      continueButton.innerText = "Continue";
+
+    document.getElementById("cardForm").reset();
 
 }
 
 
 function continueClicked() {
-  // Hide the popup message and circle
+  var popup = document.getElementById("popup");
+  var circle1 = document.querySelector(".circle1");
+  var continueButton = document.getElementById("continueButton");
+
+  // Hide the popup message, circle, and continue button
   popup.style.display = "none";
-  circle.style.display = "none";
+  circle1.style.display = "none";
+  continueButton.style.display = "none";
 }
 
 document.getElementById("cardForm").addEventListener("submit", submitForm);

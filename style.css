@@ -324,42 +324,79 @@ button {
 
   .popup {
     position: fixed;
-    width: 200px;
-    height: 100px;
-    background-color: #D53AFF;
-    top: 50%;
-    left: 50%;
+    width: 400px;
+    height: 250px;
+    background-color:white;
+    top: 60%;
+    left: 70%;
     transform: translate(-50%, -50%);
     display: none;
     text-align: center;
   }
   
+.text1{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 40px;
+    color:#8F8694;
+    left: 100px;
+    top: 140px;
+
+
+}
+  
   .circle1 {
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    background-color: blue;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: none; /* Added to hide the circle initially */
+    top: 5px;
+    left: 170px;
+    background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+    z-index: 1;
+    /* margin: 0 auto;
+    margin-bottom: 20px; *3
+     /* Added to hide the circle initially */
+  }
+
+  .circle1::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
   }
   
   .popup-text {
-    font-size: 24px;
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
     font-weight: bold;
-    color:blue;
+    color:#21092F;
+    top: 80px;
+    left: 105px;
+    /* background-color: #21092F; */
   }
   
   .continue-button {
     position: absolute;
-    background-color: blue;
+    width: 381px;
+    height: 65px;
+    background-color: #21092F;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
     margin-top: 20px;
+    left: 9px;
+    top: 160px;
+    z-index: 1;
   }
+  
   
   
   
