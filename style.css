@@ -54,7 +54,7 @@ transform: rotate(45deg);
     width: 447px;
     height: 245px;
     left: 164px;
-    top: 225px;
+    top: 270px;
     background-color: #6348FE;
     border-radius: 10px;
 
@@ -127,7 +127,7 @@ transform: rotate(45deg);
     width: 447px;
     height: 227.33px;
     left: 258px;
-    top: 486.67px;
+    top: 560.67px;
     
     background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -198,8 +198,8 @@ p {
     width: 300px;
     height: 100px;
     align-items: center;
-    top: 600px;
-    left: 796px;
+    top: 590px;
+    left: 797px;
  
  }
 .inputmonth {
@@ -216,7 +216,7 @@ p {
     display: flex;
     width: 50px;
     height: 20px;
-    top: -20px;
+    top: 7px;
     font-size: 10px;
     
 
@@ -241,7 +241,7 @@ p {
 }
 .inputcvc {
     position: absolute;
-    width: 191px;
+    width: 171px;
     height: 45px;
     top: 25px;
     left: 205px;
@@ -253,9 +253,9 @@ p {
     position: absolute;
     width: 50px;
     height: 10px;
-    top: -20px;
+    top: 7px;
     left: 210px;
-    font-size: 16px;
+    font-size: 10px;
     z-index: 1;
 }
 .name_numberbox {
@@ -270,7 +270,7 @@ p {
     /* background-color: #6348FE; */
 }
 .inputname {
-    width: 318px;
+    width: 381px;
     height: 45px;
     border-radius: 5px;
     cursor: pointer;
@@ -286,7 +286,7 @@ p {
 
 .inputnumber {
     position: absolute;
-    width: 318px;
+    width: 381px;
     height: 45px;
     top: 90px;
     border-radius: 5px;
@@ -306,7 +306,7 @@ button {
     height: 53px;
     border-radius: 5px;
     left: 800px;
-    top: 800px;
+    top: 700px;
     background-color: #21092F;
     color: #FFFFFF;
 }
@@ -316,10 +316,45 @@ button {
   }
   
   .error-message {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 100px;
     color: red;
-    margin-top: 5px;
+    top:80px;
+    left: 10px;
+    /* margin-top: 5px; */
     display: block;
+
   }
+
+
+  .error-name{
+    position: absolute;
+    top:46px;
+    left: 3px;
+    z-index: 5;
+    color: red;
+    display: block;
+    
+  }
+    .error-number{
+     position: absolute;
+     top:145px;
+     left: 3px;
+     z-index: 5;
+     color: red;
+     display: block;
+}
+ .error-cvc {
+    position: absolute;
+    width: 300px;
+    top:80px;
+    left: 210px;
+    z-index: 5;
+    color: red;
+    display: block;
+ }
 
 
   .popup {
@@ -393,9 +428,10 @@ button {
     cursor: pointer;
     margin-top: 20px;
     left: 9px;
-    top: 160px;
+    top: 150px;
     z-index: 1;
   }
+  
   
   
   

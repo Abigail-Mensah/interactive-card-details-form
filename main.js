@@ -69,18 +69,18 @@ function submitForm(event) {
   var isValid = true;
 
   if (name.trim() === "") {
-    nameError.innerText = "Name can't be blank";
+    nameError.innerText = "can't be blank";
     nameInput.style.borderColor = "red";
     isValid = false;
   }
 
 
   if (cardNumber.trim() === "") {
-    numberError.innerText = "Card number can't be blank";
+    numberError.innerText = " can't be blank";
     numberError.style.color = "red";
     numberInput.style.borderColor = "red";
     isValid = false;
-  } else if (/^[a-zA-Z]+$/.test(cardNumber)) {
+  }else if (/[a-zA-Z]/.test(cardNumber)) {
     numberError.innerText = "Wrong format, only numbers are required";
     numberError.style.color = "red";
     numberInput.style.borderColor = "red";
@@ -92,14 +92,14 @@ function submitForm(event) {
   
 
   if (month.trim() === "" || year.trim() === "") {
-    monthYearError.innerText = "Expiration date can't be blank";
+    monthYearError.innerText = " can't be blank";
     monthInput.style.borderColor = "red";
     yearInput.style.borderColor = "red";
     isValid = false;
   }
 
   if (cvc.trim() === "") {
-    cvcError.innerText = "CVC can't be blank";
+    cvcError.innerText = " can't be blank";
     cvcInput.style.borderColor = "red";
     isValid = false;
   }
