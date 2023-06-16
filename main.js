@@ -57,7 +57,9 @@ function updateMonthYearText() {
 }
 
 function submitForm(event) {
-  event.preventDefault(); // Prevent the default form submission
+  event.preventDefault();
+  
+   // Prevent the default form submission
 
   var name = nameInput.value;
   var cardNumber = numberInput.value;
@@ -118,6 +120,10 @@ function submitForm(event) {
     monthInput.style.display = "none";
     yearInput.style.display = "none";
     cvcInput.style.display = "none";
+
+
+
+
     document.getElementById("submit").style.display="none";
 
 
@@ -127,6 +133,12 @@ function submitForm(event) {
   document.querySelector(".cvctext").style.display = "none";
   document.querySelector(".monthtext").style.display = "none";
   document.querySelector(".yeartext").style.display = "none";
+
+
+  document.querySelector(".error-name").style.display = "none";
+  document.querySelector(".error-number").style.display = "none";
+  document.getElementById(".yeartext").style.display = "none";
+  document.getElementById("cvcError").style.display = "none";
     popup.style.display = "block";
 
     // Reset the form after submission (optional)
@@ -153,12 +165,14 @@ function continueClicked() {
   var popup = document.getElementById("popup");
   var circle1 = document.querySelector(".circle1");
   var continueButton = document.getElementById("continueButton");
+
   circle1.style.display = "block";
   // Hide the popup message, circle, and continue button
   popup.style.display = "none";
   circle1.style.display = "none";
   continueButton.style.display = "none";
 }
+
 
 document.getElementById("cardForm").addEventListener("submit", submitForm);
 
