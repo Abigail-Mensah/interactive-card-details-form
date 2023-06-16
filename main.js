@@ -138,7 +138,7 @@ function submitForm(event) {
   
 
     // Show the circle
-    circle1.style.display = "block";
+   
 
       // Show the continue button with text
       continueButton.style.display = "block";
@@ -153,7 +153,7 @@ function continueClicked() {
   var popup = document.getElementById("popup");
   var circle1 = document.querySelector(".circle1");
   var continueButton = document.getElementById("continueButton");
-
+  circle1.style.display = "block";
   // Hide the popup message, circle, and continue button
   popup.style.display = "none";
   circle1.style.display = "none";
