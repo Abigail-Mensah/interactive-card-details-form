@@ -125,7 +125,8 @@ function submitForm(event) {
   document.querySelector(".nametext").style.display = "none";
   document.querySelector(".numbertext").style.display = "none";
   document.querySelector(".cvctext").style.display = "none";
-  document.querySelector(".monthtext").style.display = "none"
+  document.querySelector(".monthtext").style.display = "none";
+  document.querySelector(".yeartext").style.display = "none";
     popup.style.display = "block";
 
     // Reset the form after submission (optional)
