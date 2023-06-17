@@ -545,7 +545,7 @@ button {
     position: fixed;
     width: 400px;
     height: 250px;
-    background-color:green;
+    /* background-color:green ; */
     top: 60%;
     left: 70%;
     transform: translate(-50%, -50%);

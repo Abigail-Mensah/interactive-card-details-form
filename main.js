@@ -135,10 +135,6 @@ function submitForm(event) {
   document.querySelector(".yeartext").style.display = "none";
 
 
-  document.querySelector(".error-name").style.display = "none";
-  document.querySelector(".error-number").style.display = "none";
-  document.getElementById(".yeartext").style.display = "none";
-  document.getElementById("cvcError").style.display = "none";
     popup.style.display = "block";
 
     // Reset the form after submission (optional)
