@@ -120,7 +120,10 @@ function submitForm(event) {
     monthInput.style.display = "none";
     yearInput.style.display = "none";
     cvcInput.style.display = "none";
-
+    nameError.style.display="none";
+    numberError.style.display="none";
+    cvcError.style.display="none";
+    monthYearError.style.display="none";
 
 
 
@@ -157,7 +160,8 @@ function submitForm(event) {
 }
 
 
-function continueClicked() {
+function continueClicked(event) {
+  event.preventDefault();
   var popup = document.getElementById("popup");
   var circle1 = document.querySelector(".circle1");
   var continueButton = document.getElementById("continueButton");
