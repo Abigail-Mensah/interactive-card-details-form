@@ -126,7 +126,7 @@ function submitForm(event) {
   }
 
   if (cvc.trim() === "") {
-    cvcError.innerText = " can't be blank";
+    cvcError.innerText = " Can't be blank";
     cvcInput.style.borderColor = "red";
     isValid = false;
   }

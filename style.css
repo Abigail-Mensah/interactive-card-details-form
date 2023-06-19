@@ -657,7 +657,7 @@ button {
         }
     
  .rectangle {
-    /* position: absolute; */
+    position: absolute;
      width: 475px;
      height: 245px;
      left: 30px;
@@ -669,16 +669,12 @@ button {
         
         }
         .overlays1 {
-            /* position: absolute; */
             width: 100px;
             height:100px;
+            z-index: 3;
             left: 336px;
             top: 10px;
-            background: #FF834A;
-            mix-blend-mode: normal;
-            opacity: 0.85;
-            filter: blur(30px);
-            transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+          
         }
 
         ul {
@@ -806,18 +802,10 @@ h2 {
 
 
 
-.overlays1 {
-    position: absolute;
-    width: 20px;
-    height:10px;
-    left: 300px;
-    top: -60px;
-    background: #FF834A;
-    mix-blend-mode: normal;
-    opacity: 0.85;
-    filter: blur(20px);
-    transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
-}
+
+
+
+
 
 
 .overlay3 {
@@ -832,6 +820,9 @@ h2 {
     filter: blur(10.957px);
     transform: rotate(45deg);
 }
+
+
+
 
 
 
