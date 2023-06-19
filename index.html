@@ -14,7 +14,7 @@
         <input type="text" id="nameInput" class="inputname" placeholder="eg. Jane Appleseed">
         <div id="nameError" class="error-name "></div>
         <label for="numberInput" class="numbertext"> CARD NUMBER </label>
-        <input type="text" id="numberInput" class="inputnumber" placeholder="e.g. 123456789123000">
+        <input type="text" id="numberInput" class="inputnumber" placeholder="e.g. 123456789123000"  maxlength="19"   >
         <div id="numberError" class="error-number"></div>
        </div>
     
@@ -27,12 +27,12 @@
 
         <div class="dates"> 
             <label for="cvcInput"  class = "cvctext">CVC</label>
-            <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123">
+            <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123" maxlength="3">
             <div id="cvcError" class="error-cvc"></div>
             <label for="monthInput" class = "monthtext">EXP.DATE  </label>
-            <input type="text" id="monthInput" class="inputmonth" class = "centered-input" placeholder="MM">
+            <input type="text" id="monthInput" class="inputmonth" class = "centered-input" placeholder="MM" maxlength="2">
             <div id="monthYearError" class="error-message"></div>
-            <input type="text" id="yearInput" class="inputyear" placeholder="YY">
+            <input type="text" id="yearInput" class="inputyear" placeholder="YY" maxlength="2">
             <label for="yearInput" class = "yeartext"> (MM/YY)</label>
           </div>
 
@@ -52,7 +52,7 @@
                 <div class="overlays2"></div>
                 <div class="overlays3"></div>
                 <div  class="number">
-                    <h2  id="numberText">0000 0000 0000 0000</h2>
+                    <h1  id="numberText">0000 0000 0000 0000</h1>
                 </div>
                 <div class="name-month-year">
                 <div class="name">

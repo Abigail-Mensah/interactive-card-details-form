@@ -16,10 +16,35 @@ var monthYearError = document.getElementById("monthYearError");
 var cvcError = document.getElementById("cvcError");
 
 numberInput.addEventListener("input", function() {
+  addSpaces();
   numberText.innerText = numberInput.value;
   numberError.innerText = "";
   numberInput.style.borderColor = "";
 });
+
+
+
+function addSpaces() {
+  var input = numberInput;
+  var value = input.value;
+
+  // Remove any existing spaces from the value
+  value = value.replace(/\s/g, "");
+
+  // Add spaces after every 4 characters
+  value = value.replace(/(\d{4}(?!\s))/g, "$1 ");
+
+  // Trim the value to the maximum length
+  value = value.substring(0, 19);
+
+  // Update the input value with the spaced format
+  input.value = value;
+}
+
+
+
+
+
 
 nameInput.addEventListener("input", function() {
   nameText.innerText = nameInput.value;
@@ -71,14 +96,14 @@ function submitForm(event) {
   var isValid = true;
 
   if (name.trim() === "") {
-    nameError.innerText = "can't be blank";
+    nameError.innerText = "Can't be blank";
     nameInput.style.borderColor = "red";
     isValid = false;
   }
 
 
   if (cardNumber.trim() === "") {
-    numberError.innerText = " can't be blank";
+    numberError.innerText = " Can't be blank";
     numberError.style.color = "red";
     numberInput.style.borderColor = "red";
     isValid = false;
@@ -94,7 +119,7 @@ function submitForm(event) {
   
 
   if (month.trim() === "" || year.trim() === "") {
-    monthYearError.innerText = " can't be blank";
+    monthYearError.innerText = " Can't be blank";
     monthInput.style.borderColor = "red";
     yearInput.style.borderColor = "red";
     isValid = false;
@@ -105,6 +130,9 @@ function submitForm(event) {
     cvcInput.style.borderColor = "red";
     isValid = false;
   }
+
+
+  
 
   if (isValid) {
     // Perform form submission
@@ -142,13 +170,21 @@ function submitForm(event) {
 
     // Reset the form after submission (optional)
     document.getElementById("cardForm").reset();
+
+  
+
+
+     // Add spaces to card number field
+
   }
 
 
-    // Show the popup message
+
   
 
-    // Show the circle
+
+
+    
    
 
       // Show the continue button with text
@@ -156,7 +192,7 @@ function submitForm(event) {
       continueButton.innerText = "Continue";
 
     document.getElementById("cardForm").reset();
-
+ 
 }
 
 
