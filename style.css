@@ -39,14 +39,14 @@ transform: rotate(45deg);
 }
 .overlay3 {
     position: absolute;
-    width:100px;
+    width:30px;
     height: 557px;
     left: 130.57px;
     top: 200.53px;
     background: #47A2FF;
     mix-blend-mode: normal;
     opacity: 0.85;
-    filter: blur(40.957px);
+    filter: blur(70.957px);
     transform: rotate(45deg);
 }
 .rectangle {
