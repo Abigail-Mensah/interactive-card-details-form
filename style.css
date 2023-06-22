@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 body{
     width: 100%;
-    height: 900px;
+    height:900px;
     position: relative;
     background-color: white;
     overflow-x: hidden;
+    font-family: Space Grotesk;
 }
 .leftcontainer{
 width: 483px;
@@ -21,34 +23,34 @@ top: 30px;
 background: #D53AFF;
 mix-blend-mode: normal;
 opacity: 0.85;
-filter: blur(67.957px);
+filter: blur(87.957px);
 transform: rotate(45deg);
 }
 .overlay2{
-    position: absolute;
-width: 30px;
+position: absolute;
+width: 200px;
 height: 357px;
-left: 220.53px;
-top: 28px;
+left: 140.53px;
+top: 180px;
 
 background: #FF834A;
 mix-blend-mode: normal;
 opacity: 0.85;
-filter: blur(87.957px);
+filter: blur(200.957px);
 transform: rotate(45deg);
 }
 
 
 .overlay3 {
     position: absolute;
-    width:11px;
+    width:40px;
     height: 557px;
     left: 130.57px;
     top: 200.53px;
     background: #47A2FF;
     mix-blend-mode: normal;
     opacity: 0.85;
-    filter: blur(40.957px);
+    filter: blur(60.957px);
     transform: rotate(45deg);
 }
 .rectangle {
@@ -64,10 +66,10 @@ transform: rotate(45deg);
 }
 .overlays1 {
     position: absolute;
-    width: 175px;
+    width: 170px;
     height:150px;
     left: 267px;
-    top: 4px;
+    top: 19px;
     background: #FF834A;
     mix-blend-mode: normal;
     opacity: 0.85;
@@ -295,8 +297,12 @@ transform: rotate(45deg);
 
 h1 {
     position: absolute;
-    width: 370px; /* Specify the units for width */
+    width: 400px; /* Specify the units for width */
     box-sizing: border-box;
+    font-size: 28px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 3.422px;
     padding: 0;
     margin: 0;
     height: 5px;
@@ -316,6 +322,10 @@ p {
     height: 20px;
     top: 180px;
     left: 30px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     color: white;
     font-size: 14px;
     line-height: 18px;
@@ -324,8 +334,12 @@ p {
 }
  ul {
     position: absolute;
-    width:50px;
+    width:100px;
     height: 30px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     top: 180px;
     left: 340px;
     color: white;
@@ -336,6 +350,10 @@ p {
     position: absolute;
     width:50px;
     height: 100px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     top: 10px;
     left: 300px;
     color: white ;
@@ -373,6 +391,9 @@ p {
     display: flex;
     width: 140px;
     height: 20px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 3.422px;
     top: 7px;
     font-size: 12px;
     color:#21092F;
@@ -401,7 +422,7 @@ p {
     width: 50px;
     height: 20px;
     top: 7px;
-    left: 60px;
+    left: 80px;
     font-size: 12px;
     color:#21092F;
 }
@@ -427,6 +448,10 @@ p {
     position: absolute;
     width: 50px;
     height: 10px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     top: 7px;
     left: 210px;
     font-size: 10px;
@@ -463,6 +488,10 @@ p {
     position: absolute;
     width: 300px;
     height: 20px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     top: -20px;
     font-size: 10px;
     font-size: 12px;
@@ -496,6 +525,10 @@ p {
     position: absolute;
     width: 240px;
     height: 20px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     top: 70px;
     font-size: 10px;
     font-size: 12px;
@@ -506,6 +539,10 @@ button {
     position: absolute;
     width: 381px;
     height: 53px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     border-radius: 5px;
     left: 800px;
     top: 700px;
@@ -522,9 +559,13 @@ button {
     display: flex;
     width: 300px;
     height: 100px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     color: red;
     top:80px;
-    left: 10px;
+    left: 3px;
     /* margin-top: 5px; */
     display: block;
 
@@ -535,6 +576,10 @@ button {
     position: absolute;
     top:46px;
     left: 3px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     z-index: 5;
     color: red;
     display: block;
@@ -544,6 +589,10 @@ button {
      position: absolute;
      top:145px;
      left: 3px;
+     font-size: 14px;
+     font-family: Space Grotesk;
+     font-weight: 500;
+     letter-spacing: 2px;
      z-index: 5;
      color: red;
      display: block;
@@ -552,6 +601,10 @@ button {
     position: absolute;
     width: 300px;
     top:80px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     left: 210px;
     z-index: 5;
     color: red;
@@ -564,6 +617,10 @@ button {
     display: flex;
     width: 400px;
     height: 300px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     justify-content: space-between;
     /* background-color:green ; */
     top: 60%;
@@ -577,12 +634,16 @@ button {
 .text1{
     position: absolute;
     display: flex;
-    width: 300px;
+    width: 400px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     height: 40px;
     font-size: 18px;
     line-height: 23px;
     color:#8F8694;
-    left: 100px;
+    left: 40px;
     top: 160px;
 
 
@@ -614,6 +675,10 @@ button {
   .popup-text {
     width: 200px;
     height: 20px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     font-size: 20px;
     font-weight: bold;
     color:#21092F;
@@ -629,6 +694,10 @@ button {
     display: flex;
     width: 381px;
     height: 65px;
+    font-size: 14px;
+    font-family: Space Grotesk;
+    font-weight: 500;
+    letter-spacing: 2px;
     background-color: #21092F;
     color: white;
     border: none;
@@ -638,329 +707,367 @@ button {
     left: 9px;
     top: 200px;
     z-index: 1;
-    /* overflow-x: hidden;
-    overflow-y: hidden; */
+  
   }
-  
-  
-  @media (max-width: 580px) {
+
+    
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
     body{
         width: 100%;
-        /* height:400px; */
-        position: relative;
-        background-color: white;
-        overflow: hidden;
+        height:704px;
+        overflow-x: hidden;
+        /* overflow-y: hidden;  */
     }
- .leftcontainer{
-    position: absolute;
-
-    /* width: 100%; */
-    width: 700px;
-    height: 430px;
-    left: 0px;
-   
-
-        }
-     .overlay,
-     .overlay3 {
-      display: none;  
-        }
+    .leftcontainer {
+      position: absolute;
+      width: 375px;
+      height: 239px;
+      background: #21092F;
+      /* overflow-x: hidden;
+      overflow-y: hidden; */
+    }
+  
+    .overlay {
+      position: absolute;
+      width: 48px;
+      height: 557px;
+      left: 10.53px;
+      top: 30px;
+      background: #D53AFF;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(87.957px);
+      transform: rotate(45deg);
+      display: none;
+    }
+  
     .overlay2 {
-     width: 10px;
-     height: 10px;
-     top: 140px;
-        }
-    
- .rectangle {
-    position: absolute;
-     width: 475px;
-     height: 245px;
-     left: 30px;
-     top: 245px;
-     background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
-     border-radius: 10px;
-     border-radius: 10px;
-     z-index: 1;
-        
-        }
-        .overlays1 {
-            width: 100px;
-            height:100px;
-            z-index: 3;
-            left: 336px;
-            top: 10px;
-          
-        }
-
-        ul {
-       
-          left:360px;
-         
-         }
-  
-
-     .overlays2 {
-     width: 80px;
-     height: 250px;
-     top: -80px;
-     left: 170px;
-     background: #D53AFF;
-     mix-blend-mode: normal;
-     opacity: 0.85;
-     filter: blur(40px);
-     transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
-        }
-
-.cvcrectangle {
-    width: 475px;
-    height: 245.33px;
-    left: 190px;
-    top: 110px;
-    background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    
-
-
-}
-.strokes {
-    /* position: absolute; */
-    width: 300px;
-    height: 70px;
-    /* background-color: blue; */
-    top: 150px;
-    left: 60px;
-    display: none;
-}
-
-
-.cvcbar {
-    position: absolute;
-    width: 475px;
-    height: 50.11px;
-    left: -1px;
-    top: 20.01px;
-}
-h2 {
-    position: absolute;
-    width: 250px;
-    height: 100px;
-    top: 100px;
-    left: 20px;
-    color: white;
-    font-size: 28px;
-    line-height: 36px;
-}
-
-.name_numberbox {
-    width: 400px;
-    height: 100px;
-    top: 700px;
-    left: 55px;
-    cursor: pointer;
- 
-}
-
-.dates {
-
-    width: 300px;
-    height: 100px;
-    top: 870px;
-    left: 53px;
-    cursor: pointer;
-    /* background-color: green; */
- 
- }
- button {
- position: absolute; 
-    width: 381px;
-    height: 53px;
-    border-radius: 5px;
-    left: 150px;
-    top: 900px;
-
-}
-
-
-
-
-.cvcinner {
-    /* position: absolute; */
-    width: 320px;
-    height: 35.26px;
-    height: 35.26px;
-    left: 75px;
-    top: 100.23px;
-    background: #ADB5BE;
-    border-radius: 4px;
-
-}
-
-
-.cvcinner span {
-      left: 295px;
-}
-
-.overlays2 {
-    /* position:absolute; */
-    width: 20px;
-    height: 130px;
-    top: 100px;
-    left: 170px;
-    background: #D53AFF;
-    mix-blend-mode: normal;
-    opacity: 0.85;
-    filter: blur(20px);
-    transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
-}
-
-
-
-.inputname {
-    width: 581px;
-    height: 45px;
-    border-radius: 5px;
-    left: 30px;
-    cursor: pointer;
-    border: solid 1px #DFDEE0;
-  
-}
-
-
-
-.inputnumber {
-    position: absolute;
-    width: 581px;
-    height: 45px;
-    top: 90px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: solid 1px#DFDEE0;
-}
-
-
-
-.inputmonth {
-    position: absolute;
-    justify-content: space-between;
-    display: flex;
-    width: 150px;
-    height: 45px;
-    border-radius: 5px;
-    align-items: center;
-    cursor: pointer;
-    border: solid 1px #DFDEE0;
-    /* background-color: green; */
-}
-
-
-.inputyear {
-    position: absolute;
-    width: 150px;
-    height: 45px;
-    border-radius: 5px;
-    align-items: center;
-    left: 170px;
-    cursor: pointer;
-    border: solid 1px #DFDEE0;
-}
-
-
-.inputcvc {
-    position: absolute;
-    width: 221px;
-    height: 45px;
-    top: 25px;
-    left: 360px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: solid 1px #DFDEE0;
-  
-
-}
-
-
-
-
-
-
-
-
-
-
-
-.overlay3 {
-    /* position: absolute; */
-    width:20px;
-    height: 150px;
-    left: 130.57px;
-    top: 200.53px;
-    background: #47A2FF;
-    mix-blend-mode: normal;
-    opacity: 0.85;
-    filter: blur(10.957px);
-    transform: rotate(45deg);
-}
-.overlay2{
-    position: absolute;
-width: 30px;
-height: 357px;
-left: 420.53px;
-top: 0px;
-
-background: #FF834A;
-mix-blend-mode: normal;
-opacity: 0.85;
-filter: blur(87.957px);
-transform: rotate(45deg);
-}
-
-
-
-
-
-
-
-
-.popup {
-    position: fixed;
-    width: 400px;
-    height: 250px;
-    background-color:white;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    text-align: center;
-  }
-
-
-
-
-
-  button {
-    /* position: absolute; */
-    width: 581px;
-    height: 53px;
-    left: 62px;
-    top:1000px;
-    /* border-radius: 5px;
-   
-  
-    background-color:#21092F;
-    color: #FFFFFF; */
-}
-  
-
-
-
-
+      position: absolute;
+      width: 200px;
+      height: 80px;
+      left: 120.53px;
+      top: 5px;
+      background: #FF834A;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(130.957px);
+      transform: rotate(45deg);
     }
   
+    .overlay3 {
+      position: absolute;
+      width: 40px;
+      height: 557px;
+      left: 130.57px;
+      top: 200.53px;
+      background: #47A2FF;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(60.957px);
+      transform: rotate(45deg);
+      display: none;
+    }
   
+    .rectangle {
+      position: absolute;
+      width: 285px;
+      height: 156px;
+      left: 20px;
+      top: 160px;
+      background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+      border-radius: 10px;
+      z-index: 1;
+    }
   
+    .overlays1 {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      left: 190px;
+      top: 10px;
+      background: #FF834A;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(20px);
+      transform: rotate(4deg);
+    }
   
+    .overlays2 {
+      position: absolute;
+      width: 50px;
+      height: 160px;
+      top: 3px;
+      left: 100px;
+      background: #D53AFF;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(30px);
+      transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+    }
   
+    .overlays3 {
+      width: 60px;
+      height: 90px;
+      top: 60px;
+      left: 140px;
+      background: #47A2FF;
+      mix-blend-mode: normal;
+      opacity: 0.85;
+      filter: blur(30px);
+      transform: matrix(0.73, 0.68, -0.73, 0.68, 0, 0);
+    }
+  
+    .circle {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: white;
+      top: 23px;
+      left: 20px;
+    }
+  
+    .smallcircle {
+      width: 21.13px;
+      height: 21.13px;
+      border-radius: 50%;
+      border: 1px solid white;
+      background: transparent;
+      left: 85px;
+      top: 35px;
+    }
+  
+    .circles {
+      display: flex;
+      flex-direction: row;
+      top: 5px;
+    }
+  
+    .cvcrectangle {
+      width: 286px;
+      height: 157.33px;
+      left: 70px;
+      top: 40.67px;
+      background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      background-color: #FF834A;
+    }
+
+
+
+
+   
+
+
+    .inputcvc {
+        position: absolute;
+        width: 128px;
+        height: 45px;
+        top: 25px;
+        left: 205px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: solid 1px #DFDEE0;
+      
+    
+    }
+
+
+
+    .name_numberbox {
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 285px;
+        height: 100px;
+        top: 410px;
+        left: 10px;
+        /* background-color: #6348FE; */
+    }
+
+
+
+
+    .inputname {
+        position: absolute;
+        width: 330px;
+        left: 8px;
+      
+    }
+
+
+
+    .nametext {
+        position: absolute;
+        left: 20px;
+    }
+    
+
+
+
+
+    .inputnumber {
+        position: absolute;
+        width: 330px;
+        left: 8px;
+       
+    }
+    .numbertext {
+        position: absolute;
+        left: 20px;
+       
+    }
+
+  
+    .strokes {
+      width: 300px;
+      height: 70px;
+      top: 150px;
+      left: 20px;
+      display: none;
+    }
+  
+    .cvcbar {
+      width: 286px;
+      height: 50.11px;
+      left: -1px;
+      top: 20.01px;
+      background-color: #2F2F2F;
+    }
+  
+    .cvcinner {
+      width: 230px;
+      height: 29.26px;
+      left: 26px;
+      top: 90.23px;
+      background: #ADB5BE;
+      border-radius: 4px;
+    }
+  
+    h1 {
+      width: 300px;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      letter-spacing: 3.422px;
+      padding: 0;
+      margin: 0;
+      height: 5px;
+      top: 90px;
+      left: 10px;
+      color: white;
+    }
+  
+    p {
+      position: absolute;
+      width: 200px;
+      height: 20px;
+      top: 115px;
+      left: 10px;
+      font-size: 14px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: white;
+      line-height: 18px;
+    }
+  
+    ul {
+      width: 100px;
+      height: 30px;
+      font-size: 14px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      letter-spacing: 2px;
+      top: 115px;
+      left: 180px;
+      color: white;
+    }
+  
+    span {
+      width: 50px;
+      height: 100px;
+      font-size: 14px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      letter-spacing: 2px;
+      top: 10px;
+      left: 195px;
+      color: white;
+    }
+  
+    .dates {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 285px;
+      height: 100px;
+      align-items: center;
+      top: 590px;
+      left: 15px;
+    }
+
+    button {
+        position: absolute;
+        width: 330px;
+        left: 20px;
+        top: 800px;
+   
+    }
+
+
+
+    .popup {
+        width: 330px;
+        top: 90%;
+        left: 50%;
+    
+       
+      }
+
+
+      .popup-text {
+        width: 200px;
+        top: 80px;
+        left:80px;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      .text1{
+        position: absolute;
+        display: flex;
+        width: 350px;
+        left: 18px;
+       
+    }
+
+      .continue-button {
+        position: relative;
+        display: flex;
+        width: 330px;
+        background-color: green;
+        left: 22px;
+      }
+      .circle1 {
+        position: absolute;
+        left: 150px;
+       
+    
+      }
+
+
+  }
+  
+    
   
 
 
+
+
+
+   
+    

@@ -47,7 +47,11 @@ function addSpaces() {
 
 
 nameInput.addEventListener("input", function() {
-  nameText.innerText = nameInput.value;
+  var enteredName = nameInput.value;
+  var uppercaseName = enteredName.toUpperCase();
+
+  nameText.innerText = uppercaseName;
+  nameInput.value = uppercaseName;
   nameError.innerText = "";
   nameInput.style.borderColor = "";
 });
@@ -86,44 +90,69 @@ function submitForm(event) {
   
    // Prevent the default form submission
 
-  var name = nameInput.value;
-  var cardNumber = numberInput.value;
-  var month = monthInput.value;
-  var year = yearInput.value;
-  var cvc = cvcInput.value;
+   var name = nameInput.value;
+   var cardNumber = numberInput.value;
+   var month = monthInput.value;
+   var year = yearInput.value;
+   var cvc = cvcInput.value;
+ 
+   // Perform validation checks
+   var isValid = true;
+ 
+   if (name.trim() === "") {
+     nameError.innerText = "Can't be blank";
+     nameInput.style.borderColor = "red";
+     isValid = false;
+   }
+ 
+   if (cardNumber.trim() === "") {
+     numberError.innerText = "Can't be blank";
+     numberError.style.color = "red";
+     numberInput.style.borderColor = "red";
+     isValid = false;
+   } else if (/[a-zA-Z]/.test(cardNumber)) {
+     numberError.innerText = "Wrong format, only numbers are required";
+     numberError.style.color = "red";
+     numberInput.style.borderColor = "red";
+     isValid = false;
+   } else {
+     numberError.innerText = "";
+     numberInput.style.borderColor = "";
+   }
+ 
+   if (month.trim() === "" || year.trim() === "") {
+     monthYearError.innerText = "Can't be blank";
+     monthInput.style.borderColor = "red";
+     yearInput.style.borderColor = "red";
+     isValid = false;
+   } else {
+     var monthValue = parseInt(month);
+     var yearValue = parseInt(year);
 
-  // Perform validation checks
-  var isValid = true;
-
-  if (name.trim() === "") {
-    nameError.innerText = "Can't be blank";
-    nameInput.style.borderColor = "red";
-    isValid = false;
-  }
 
 
-  if (cardNumber.trim() === "") {
-    numberError.innerText = " Can't be blank";
-    numberError.style.color = "red";
-    numberInput.style.borderColor = "red";
-    isValid = false;
-  }else if (/[a-zA-Z]/.test(cardNumber)) {
-    numberError.innerText = "Wrong format, only numbers are required";
-    numberError.style.color = "red";
-    numberInput.style.borderColor = "red";
-    isValid = false;
-  } else {
-    numberError.innerText = "";
-    numberInput.style.borderColor = "";
-  }
-  
+ 
+     if (isNaN(monthValue) || monthValue < 1 || monthValue > 31) {
+      monthYearError.innerText = "Invalid month";
+      monthInput.style.borderColor = "red";
+      isValid = false;
+    } else {
+      monthYearError.innerText = "";
+      monthInput.style.borderColor = "";
+    }
+    
+ 
+    if (isNaN(yearValue) || yearValue < 0 || yearValue > 99) {
+      monthYearError.innerText = "Invalid year";
+      yearInput.style.borderColor = "red";
+      isValid = false;
+    } else {
+       yearInput.style.borderColor = "";
+     }
+   }
 
-  if (month.trim() === "" || year.trim() === "") {
-    monthYearError.innerText = " Can't be blank";
-    monthInput.style.borderColor = "red";
-    yearInput.style.borderColor = "red";
-    isValid = false;
-  }
+
+   
 
   if (cvc.trim() === "") {
     cvcError.innerText = " Can't be blank";
@@ -174,7 +203,7 @@ function submitForm(event) {
   
 
 
-     // Add spaces to card number field
+     
 
   }
 
@@ -207,7 +236,37 @@ function continueClicked(event) {
   popup.style.display = "none";
   circle1.style.display = "none";
   continueButton.style.display = "none";
+
+  // Show the input fields again
+  nameInput.style.display = "block";
+  numberInput.style.display = "block";
+  monthInput.style.display = "block";
+  yearInput.style.display = "block";
+  cvcInput.style.display = "block";
+  nameError.style.display = "block";
+  numberError.style.display = "block";
+  cvcError.style.display = "block";
+  monthYearError.style.display = "block";
+  document.getElementById('submit').style.display = "block"
+  
+  // Show the labels
+  document.querySelector(".nametext").style.display = "block";
+  document.querySelector(".numbertext").style.display = "block";
+  document.querySelector(".cvctext").style.display = "block";
+  document.querySelector(".monthtext").style.display = "block";
+  document.querySelector(".yeartext").style.display = "block";
+  
+  // Reset the form after submission
+  document.getElementById("cardForm").reset();
+
+
+
+
 }
+
+
+var continueButton = document.getElementById("continueButton");
+continueButton.addEventListener("click", continueClicked);
 
 
 document.getElementById("cardForm").addEventListener("submit", submitForm);
