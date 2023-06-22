@@ -132,7 +132,7 @@ function submitForm(event) {
 
 
  
-     if (isNaN(monthValue) || monthValue < 1 || monthValue > 31) {
+     if (isNaN(monthValue) || monthValue < 1 || monthValue > 12git ) {
       monthYearError.innerText = "Invalid month";
       monthInput.style.borderColor = "red";
       isValid = false;
