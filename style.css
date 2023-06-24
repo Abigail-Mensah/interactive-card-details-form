@@ -8,8 +8,9 @@ body{
     font-family: Space Grotesk;
 }
 .leftcontainer{
+  position: absolute;
 width: 483px;
-height: 900px;
+height: 100%;
 background:  #21092F;
 }
 .overlay{
@@ -366,7 +367,7 @@ p {
     width: 300px;
     height: 100px;
     align-items: center;
-    top: 590px;
+    top: 570px;
     left: 797px;
  
  }
@@ -533,6 +534,55 @@ p {
     font-size: 10px;
     font-size: 12px;
     border-color:#6348FE;
+}
+
+
+ 
+.card_cvctype {
+     position: absolute;
+     width: 300px;
+     height: 200px;
+     border-radius: 50%;
+     background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+     top: 140px;
+     left: 820px;
+     justify-content: space-around;
+     align-items: center;
+     z-index: 1;
+}
+
+.cardtype {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    top: 50px;
+    left: 70px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cardtype_text {
+     position: absolute;
+     top: 20px;
+     left: 70px;
+     color: white;
+}  
+
+.cvctype {
+     position: absolute;
+     width: 150px;
+     height: 30px;
+     top: 130px;
+     left: 70px;
+     background-color: white;
+     border-radius: 5px;
+
+}
+.cvctype_text  {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  color: white;
 }
 
 button {
@@ -717,13 +767,14 @@ button {
         width: 100%;
         height:704px;
         overflow-x: hidden;
-        /* overflow-y: hidden;  */
+        overflow-y: hidden; 
     }
     .leftcontainer {
       position: absolute;
       width: 375px;
       height: 239px;
       background: #21092F;
+      left: 0px;
       /* overflow-x: hidden;
       overflow-y: hidden; */
     }
@@ -882,10 +933,54 @@ button {
         justify-content: space-between;
         width: 285px;
         height: 100px;
-        top: 410px;
+        top: 530px;
         left: 10px;
         /* background-color: #6348FE; */
     }
+
+    .card_cvctype {
+      position: absolute;
+      width: 300px;
+      height: 160px;
+      border-radius: 50%;
+      background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+      top: 340px;
+      left: 30px;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1;
+ }
+
+
+
+  
+.cardtype {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 30px;
+  left: 65px;
+}
+
+.cardtype_text {
+   position: absolute;
+   top: 10px;
+   left: 70px;
+}  
+
+.cvctype {
+   position: absolute;
+   width: 150px;
+   height: 20px;
+   top: 100px;
+   left: 65px;
+
+}
+.cvctype_text  {
+position: absolute;
+top: 80px;
+left: 70px;
+}
 
 
 
@@ -1006,7 +1101,7 @@ button {
       width: 285px;
       height: 100px;
       align-items: center;
-      top: 590px;
+      top: 690px;
       left: 15px;
     }
 

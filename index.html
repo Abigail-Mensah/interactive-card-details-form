@@ -8,7 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form id = "cardForm">  
+    <form id = "cardForm">
+       <div class="card_cvctype">
+
+            <div>
+               <label for="cardTypeNumber" class="cardtype_text" >Card Type:</label>
+               <input type="text" id="cardTypeNumber"  class="cardtype" disabled>
+            </div>
+        
+        <!-- CVC Type -->
+            <div>
+               <label for="cardTypeCVC" class="cvctype_text"  >CVC Type:</label>
+               <input type="text" id="cardTypeCVC"   class="cvctype" disabled>
+            </div>
+         </div> 
+        
+       
+
        <div class ="name_numberbox">
          <label for="nameInput" class="nametext">CARDHOLDER NAME</label>
          <input type="text" id="nameInput" class="inputname" placeholder="eg. Jane Appleseed">
@@ -20,14 +36,11 @@
     
      
       
-      
-      
-       
 
 
         <div class="dates"> 
             <label for="cvcInput"  class = "cvctext">CVC</label>
-            <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123" maxlength="3">
+            <input type="text" id="cvcInput" class="inputcvc" placeholder="eg.123" maxlength="4">
             <div id="cvcError" class="error-cvc"></div>
             <label for="monthInput" class = "monthtext">EXP.DATE  </label>
             <input type="text" id="monthInput" class="inputmonth" class = "centered-input" placeholder="MM" maxlength="2">
@@ -35,6 +48,11 @@
             <input type="text" id="yearInput" class="inputyear" placeholder="YY" maxlength="2">
             <label for="yearInput" class = "yeartext"> (MM/YY)</label>
           </div>
+             
+
+
+
+
 
         <div class="leftcontainer">
             <div class="overlay"></div>
