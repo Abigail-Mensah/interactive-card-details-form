@@ -674,7 +674,7 @@ button {
     justify-content: space-between;
     /* background-color:green ; */
     top: 600px;
-    left: 70%;
+    left: 1000px;
     transform: translate(-50%, -50%);
     display: none;
     text-align: center;
@@ -1116,9 +1116,11 @@ left: 70px;
 
 
     .popup {
+        position: absolute;
         width: 330px;
         top: 90%;
         left: 50%;
+        /* background-color: red; */
     
        
       }
@@ -1147,13 +1149,23 @@ left: 70px;
         background-color: #21092F;
         left: 22px;
       }
+    
+
       .circle1 {
         position: absolute;
-        left: 130px;
-        top:20px;
-       
-    
+        display: block;
+        left: 50%; /* Center horizontally */
+        top: 20px;
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 2;
       }
+
+
+      .error-number{
+        position: absolute;
+        width: 355px;
+       
+   }
 
 
   }
