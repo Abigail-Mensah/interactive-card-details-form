@@ -673,7 +673,7 @@ button {
     letter-spacing: 2px;
     justify-content: space-between;
     /* background-color:green ; */
-    top: 60%;
+    top: 700px;
     left: 70%;
     transform: translate(-50%, -50%);
     display: none;
@@ -705,7 +705,7 @@ button {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    top: 5px;
+    top: 30px;
     left: 170px;
     background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
     z-index: 1;
